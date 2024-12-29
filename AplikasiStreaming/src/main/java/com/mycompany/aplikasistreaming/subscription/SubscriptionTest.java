@@ -87,7 +87,7 @@ public class SubscriptionTest {
                     return;
 
                 case "0":
-                    System.out.println("@ Logout berhasil. Terima kasih!");
+                    System.out.println("@ Logout berhasil. Terima kasih telah menggunakan aplikasi!");
                     System.exit(0);
                     break;
 

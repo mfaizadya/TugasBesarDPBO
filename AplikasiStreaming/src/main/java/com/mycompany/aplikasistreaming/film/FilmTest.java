@@ -33,7 +33,7 @@ public class FilmTest {
             System.out.println("2. Cari Film Berdasarkan Kata Kunci");
             System.out.println("3. Tonton Film");
             System.out.println("9. Kembali");
-            System.out.println("0. Keluar");
+            System.out.println("0. Logout");
             System.out.print("Pilih opsi: ");
 
             int choice = scanner.nextInt();
@@ -85,9 +85,9 @@ public class FilmTest {
                     AplikasiStreaming.menuUtama();
                     return;
 
-                case 0: // Keluar
-                    running = false;
-                    System.out.println("\nTerima kasih telah menggunakan aplikasi ini!");
+                case 0: 
+                    System.out.println("\n@ Logout berhasil. Terima kasih telah menggunakan aplikasi ini!");
+                    System.exit(0);
                     break;
 
                 default:
@@ -115,7 +115,7 @@ public class FilmTest {
             System.out.println("2. Cari Documentary Berdasarkan Kata Kunci");
             System.out.println("3. Tonton Documentary");
             System.out.println("9. Kembali");
-            System.out.println("0. Keluar");
+            System.out.println("0. Logout");
             System.out.print("Pilih opsi: ");
 
             int choice = scanner.nextInt();
@@ -152,6 +152,7 @@ public class FilmTest {
                     for (Film film : documentaryList) {
                         if (film.getTitle().equalsIgnoreCase(title)) {
                             film.watch();
+                            StreamingOptionTest.main(args);
                             watched = true;
                             break;
                         }
@@ -166,8 +167,8 @@ public class FilmTest {
                     return;
 
                 case 0: // Keluar
-                    running = false;
-                    System.out.println("\nTerima kasih telah menggunakan aplikasi ini!");
+                    System.out.println("\n@ Logout berhasil. Terima kasih telah menggunakan aplikasi ini!");
+                    System.exit(0);
                     break;
 
                 default:
@@ -233,6 +234,7 @@ public class FilmTest {
                     for (Film film : seriesList) {
                         if (film.getTitle().equalsIgnoreCase(title)) {
                             film.watch();
+                            StreamingOptionTest.main(args);
                             watched = true;
                             break;
                         }
@@ -247,8 +249,7 @@ public class FilmTest {
                     return;
 
                 case 0: // Keluar
-                    running = false;
-                    System.out.println("\nTerima kasih telah menggunakan aplikasi ini!");
+                    System.out.println("\n@ Logout berhasil. Terima kasih telah menggunakan aplikasi ini!");
                     break;
 
                 default:

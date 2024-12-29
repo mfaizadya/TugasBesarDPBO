@@ -14,6 +14,7 @@ import com.mycompany.aplikasistreaming.streamingoption.Quality;
 import com.mycompany.aplikasistreaming.streamingoption.StreamingOption;
 import com.mycompany.aplikasistreaming.streamingoption.Audio;
 import com.mycompany.aplikasistreaming.cast.CastToDeviceTest;
+import com.mycompany.aplikasistreaming.watchparty.WatchPartyTest;
 import java.util.*;
 public class StreamingOptionTest {
     public static void main(String[] args) {
@@ -28,6 +29,7 @@ public class StreamingOptionTest {
             System.out.println("2. Ubah Audio " +  "(Format saat ini: " +  streamingOption.getAudio() + ")");
             System.out.println("3. Ubah Subtitle " +  "(Bahasa saat ini: " + streamingOption.getSubtitle() + ")");
             System.out.println("4. Casting ke perangkat lain");
+            System.out.println("5. Adakan Watchparty");
             System.out.println("9. Sudahi menonton");
             System.out.println("Masukkan angka: ");
             int pilih = scanner.nextInt();
@@ -71,9 +73,13 @@ public class StreamingOptionTest {
                 case 4:
                     CastToDeviceTest.main(args);
                     break;
+                    
+                case 5:
+                    WatchPartyTest.main(args);
+                    break;
 
                 case 9:
-                    System.out.println("Anda telah keluar");
+                    System.out.println("Anda telah selesai menonton.");
                     AplikasiStreaming.menuUtama();
                     break;
 

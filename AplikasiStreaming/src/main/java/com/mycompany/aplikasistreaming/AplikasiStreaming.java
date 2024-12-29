@@ -83,7 +83,7 @@ public class AplikasiStreaming {
                                     break;
 
                                 case "0":
-                                    System.out.println("@ Logout berhasil. Terima kasih!");
+                                    System.out.println("@ Logout berhasil. Terima kasih telah menggunakan aplikasi!");
                                     System.exit(0);
                                     break;
                             }
@@ -167,7 +167,7 @@ public class AplikasiStreaming {
                     CastToDeviceTest.main(args);
                     return;
                 case "0":
-                    System.out.println("Logout berhasil.");
+                    System.out.println("Logout berhasil. Terima kasih telah menggunakan aplikasi!");
                     System.exit(0);
                     return;
                 default:
