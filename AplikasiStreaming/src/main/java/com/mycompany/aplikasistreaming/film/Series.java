@@ -31,7 +31,7 @@ public class Series extends Film {
         } catch (IllegalArgumentException e) {
             System.out.println("Exception: " + e.getMessage());
         } finally {
-            System.out.println("Selesai mencoba untuk menonton series.");
+            System.out.println("Sukses untuk menonton series.");
         }
     }
 

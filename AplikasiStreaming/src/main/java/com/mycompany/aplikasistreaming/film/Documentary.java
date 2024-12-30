@@ -31,7 +31,7 @@ public class Documentary extends Film {
         } catch (IllegalArgumentException e) {
             System.out.println("Exception: " + e.getMessage());
         } finally {
-            System.out.println("Selesai mencoba untuk menonton documentary.");
+            System.out.println("Sukses untuk menonton documentary.");
         }
     }
 
