@@ -16,6 +16,7 @@ import com.mycompany.aplikasistreaming.film.Movie;
 import com.mycompany.aplikasistreaming.film.Series;
 import com.mycompany.aplikasistreaming.film.Documentary;
 import com.mycompany.aplikasistreaming.film.FilmTest;
+import com.mycompany.aplikasistreaming.streamingoption.InvalidOption;
 
 import java.util.*;
 /**
@@ -26,7 +27,7 @@ public class AplikasiStreaming {
 
     private static String[] args;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidOption {
         Scanner scanner = new Scanner(System.in);
         UserManager userManager = new UserManager();
         SubscriptionTest subscriptionTest = new SubscriptionTest();
@@ -104,7 +105,7 @@ public class AplikasiStreaming {
  
     }
     
-    public static void menuUtama() {
+    public static void menuUtama() throws InvalidOption {
       Scanner scanner = new Scanner(System.in);
       while (true) {
             System.out.println("===== APLIKASI STREAMING FILM =====");

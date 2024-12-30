@@ -2,12 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.maven.streamingoption;
+package com.mycompany.aplikasistreaming.streamingoption;
+
 
 /**
  *
  * @author fathi
  */
+import com.mycompany.aplikasistreaming.AplikasiStreaming;
+import com.mycompany.aplikasistreaming.streamingoption.Subtitle;
+import com.mycompany.aplikasistreaming.streamingoption.Quality;
+import com.mycompany.aplikasistreaming.streamingoption.StreamingOption;
+import com.mycompany.aplikasistreaming.streamingoption.Audio;
+import com.mycompany.aplikasistreaming.cast.CastToDeviceTest;
+import com.mycompany.aplikasistreaming.watchparty.WatchPartyTest;
+import java.util.*;
 import java.util.List;
 import java.util.Scanner;
 
@@ -23,8 +32,9 @@ public class StreamingOptionTest {
             System.out.println("1. Ubah Kualitas " + "(Resolusi saat ini: " + streamingOption.getQuality() + ")");
             System.out.println("2. Ubah Audio " +  "(Format saat ini: " +  streamingOption.getAudio() + ")");
             System.out.println("3. Ubah Subtitle " +  "(Bahasa saat ini: " + streamingOption.getSubtitle() + ")");
-            System.out.println("4. Keluar");
-            System.out.println(" ");
+            System.out.println("4. Casting ke perangkat lain");
+            System.out.println("5. Adakan Watchparty");
+            System.out.println("9. Sudahi menonton");
             System.out.println("Masukkan angka: ");
             int pilih = scanner.nextInt();
             switch (pilih) {
@@ -59,9 +69,16 @@ public class StreamingOptionTest {
                     break;
 
                 case 4:
-                    running = false;
-                    System.out.println("Bye bye~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                    CastToDeviceTest.main(args);
                     break;
+                              
+                case 5:
+                    WatchPartyTest.main(args);
+                    break;
+
+                case 9:
+                    System.out.println("Anda telah selesai menonton.");
+                    AplikasiStreaming.menuUtama();
 
                 default:
                     System.out.println("[ERROR]");

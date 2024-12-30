@@ -4,12 +4,13 @@
 
 package com.mycompany.aplikasistreaming.cast;
 
+import com.mycompany.aplikasistreaming.streamingoption.InvalidOption;
 import com.mycompany.aplikasistreaming.streamingoption.StreamingOptionTest;
 import java.util.*;
 
 public class CastToDeviceTest {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidOption {
         Scanner scanner = new Scanner(System.in);
         
         System.out.print("Masukkan nama perangkat untuk casting: ");

@@ -4,6 +4,7 @@
  */
 package com.mycompany.aplikasistreaming.watchparty;
 
+import com.mycompany.aplikasistreaming.streamingoption.InvalidOption;
 import com.mycompany.aplikasistreaming.watchparty.PrivateWatchParty;
 import com.mycompany.aplikasistreaming.watchparty.WatchParty;
 import com.mycompany.aplikasistreaming.streamingoption.StreamingOptionTest;
@@ -18,7 +19,7 @@ public class WatchPartyTest {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidOption {
         // TODO code application logic here
            Scanner scanner = new Scanner(System.in);
 

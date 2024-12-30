@@ -5,6 +5,7 @@
 package com.mycompany.aplikasistreaming.film;
 import com.mycompany.aplikasistreaming.AplikasiStreaming;
 import com.mycompany.aplikasistreaming.cast.CastToDeviceTest;
+import com.mycompany.aplikasistreaming.streamingoption.InvalidOption;
 import com.mycompany.aplikasistreaming.streamingoption.StreamingOptionTest;
 import com.mycompany.aplikasistreaming.watchparty.WatchPartyTest;
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ import java.util.Scanner;
 public class FilmTest {
 
     private static String[] args;
-    public static void Movie() {
+    public static void Movie() throws InvalidOption {
         ArrayList<Film>movieList = new ArrayList<>();
         movieList.add(new Movie("M002", "Bullet Train", "Action", 2022, 127, 7.3, "url_here", true));
         movieList.add(new Movie("M003", "Rush Hour", "Action", 1998, 98, 7.0, "url_here", true));
@@ -98,7 +99,7 @@ public class FilmTest {
         scanner.close();
     }
     
-    public static void Documentary() {
+    public static void Documentary() throws InvalidOption {
          ArrayList<Film>documentaryList = new ArrayList<>();
         documentaryList.add(new Documentary("D001", "Planet Earth", "Nature", 2006, 90, 9.4, "url_here", "Wildlife", "David Attenborough"));
         documentaryList.add(new Documentary("D002", "The Elephant Queen", "Nature", 2018, 96, 7.8, "url_here", "Wildlife", "Chiwetel Ejiofor"));
@@ -180,7 +181,7 @@ public class FilmTest {
         
     }
     
-    public static void Series() {
+    public static void Series() throws InvalidOption {
         ArrayList<Film>seriesList = new ArrayList<>();
         seriesList.add(new Series("S001", "The Mandalorian", "Sci-Fi", 2019, 50, 8.5, "url_here", 3, 24));
         seriesList.add(new Series("S002", "Breaking Bad", "Crime, Drama, Thriller", 2008, 47, 9.5, "url_here", 5, 62));

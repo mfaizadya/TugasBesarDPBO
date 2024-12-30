@@ -1,4 +1,4 @@
-package com.maven.streamingoption;
+package com.mycompany.aplikasistreaming.streamingoption;
 
 public class InvalidOption extends Exception{
     public InvalidOption(String e){

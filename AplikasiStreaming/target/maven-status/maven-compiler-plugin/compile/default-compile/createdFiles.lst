@@ -6,6 +6,7 @@ com\mycompany\aplikasistreaming\user\UserManager.class
 com\mycompany\aplikasistreaming\film\FilmTest.class
 com\mycompany\aplikasistreaming\recommendation\Recommendation.class
 com\mycompany\aplikasistreaming\cast\CastToDeviceTest.class
+com\mycompany\aplikasistreaming\streamingoption\InvalidOption.class
 com\mycompany\aplikasistreaming\watchparty\PrivateWatchParty.class
 com\mycompany\aplikasistreaming\streamingoption\Quality.class
 com\mycompany\aplikasistreaming\subscription\Subscription.class
