@@ -2,19 +2,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.aplikasistreaming.streamingoption;
+package com.maven.streamingoption;
 
 /**
  *
  * @author fathi
  */
-import java.util.*;
 
 public class StreamingOption {
     private String streamOptID;
     private String quality = "480p";
     private String audio = "Stereo";
     private String subtitle = "Indonesia";
+
 
     public void chooseQuality(String quality) {
         this.quality = quality;
