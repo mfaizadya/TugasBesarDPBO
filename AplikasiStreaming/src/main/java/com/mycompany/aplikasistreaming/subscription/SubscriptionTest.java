@@ -61,9 +61,10 @@ public class SubscriptionTest {
 
             default:
                 System.out.println("[Error]: Paket tidak tersedia!");
-                return;
+                showSubscriptionOptions();
+                break;
         }
-
+        
         confirmSubscription(scanner, subscription);
     }
 

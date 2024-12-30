@@ -32,9 +32,9 @@ public class Movie extends Film {
         } catch (IllegalArgumentException e) {
             System.out.println("Exception: " + e.getMessage());
         } finally {
-            System.out.println("Sedang menonton film: " + getTitle());
+            System.out.println("Sukses untuk menonton film");
             
-            //WatchPartyTest.main(args);
+            
         }
     }
 
